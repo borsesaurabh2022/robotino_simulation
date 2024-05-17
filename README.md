@@ -79,6 +79,7 @@ ros2 launch robotino_simulation robotino_simulation.launch.py namespace:=robotin
 - namespace: It's a launch configuration used to spawn the corresponding robotinobase(1/2/3), its controllers, and node parameters
 - launch_rviz: It's a launch configuration for starting the Rviz2 with the predefined config file, parse 'false' when using nav2_stack
 - use_sim_time: Whether to use system time or not, this parameter needs to be consistent across the differently launched components
+- odom_source: The source of odometry, by default it is set to 'gps', if you want to use 'wheel_odom' as the source of odometry, set it to 'encoders'
 
 
 ### Launch SLAM toolbox
